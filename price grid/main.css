@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    color: white;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    background-color:cadetblue;
+    border-radius: 15px 15px 0 0;
+    margin-top: calc(100vh - 550px);  /*centeres element vertically*/
+    width: 50%;                       /*puts element in center*/
+    padding: 45px 30px 35px 35px;
+}
+
+.container-two, .container-three {
+    background-color:darkseagreen;
+    width: 25%;                       /*like the above, but 25% for each container*/
+    padding: 30px 15px 35px 35px;
+    row-gap: 0px;                     /*to ensure no gaps between content*/
+    margin-bottom: calc(100vh - 600px);
+}
+
+.container-two {
+    border-radius: 0 0 0 15px;
+}
+
+.container-three {
+    padding-bottom: 15px;
+    background-color:lightskyblue;
+    margin-left: 12px;
+    border-radius: 0 0 15px 0;
+}
+
+.community, .guarantee {
+    margin-bottom: 25px;
+}
+
+.why, .sub {
+    padding-bottom: 15px;
+}
+
+.button {
+    border: none;
+    background-color: coral;
+    color: white;
+    font-weight: 650;
+    border-radius: 75px;
+    padding: 8px 0 8px 0;
+    width: 75%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .container-two {
+        border-radius: 0 0 0 0;
+        width: 80%;
+        padding: 30px 15px 50px 10px;
+        text-align: center;
+        margin: 0 0 0 10%;           /*margin only on left to center the content*/
+    }
+    .container-three {
+        border-radius: 0 0 15px 15px;
+        padding: 30px 15px 35px 10px;
+        width: 80%;                   /*so that it doesnt take up the entire page and has white space around it*/
+        text-align: center;
+        margin: 0 0 0 10%;
+        
+    }
+    .main-container {
+        margin: 0 25% 0 25%;
+        width: 80%;
+        text-align: center;
+        margin: 0 0 0 10%;
+    }
+    .button {
+        width: 50%;
+        margin-top: 10px;
+        margin-left: 25%;
+    }
+    .month, .cost {  /*float makes the elements "free", then setting the width and margin controls where the text goes. This makes the two text elements side by side*/
+        float: left;
+        width: 30%;
+        margin: 0 35% 0 35%;
+    }
+    
+    .month {
+        margin-bottom: 5%;
+    }
+}

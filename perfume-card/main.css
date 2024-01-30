@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;  /*ensures the body is the entire height and width of the screen*/
+    width: 100vw;
+    background-color: darksalmon;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    width: 450px;
+    height: 300px;
+}
+.row {
+    width: 450px;
+    height: 300px;
+}
+.column-one {  /*the column needs to take 50% width of the row*/
+    background-color:chocolate;
+    width: 50%;
+    height: 100%;
+    padding: 0; /*taking away bootstrap automatic padding*/
+}
+.image {      /*img needs to take 100% of column-one*/
+    width: 100%;
+    height: 100%;
+}
+.column-two {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    padding: 0; /*taking away bootstrap automatic padding*/
+}
+.bio {
+    margin: 5% 5% 0 5%;
+}
+h3 {
+    font-family: 'Cormorant', serif; 
+    color: darkseagreen;
+}
+.text {
+    font-size: smaller;
+}
+.pricing {
+    display: flex;
+    align-items: baseline;  /*both prices sitting on same line (bottom of element equal)*/
+    margin-top: 10%;
+}
+.price {
+    font-size: x-large;
+    font-weight: 500;
+    color:darkseagreen;
+    font-family: 'Cormorant', serif; 
+}
+.original-price {
+    margin-left: 5%;
+    text-decoration: line-through;
+    font-size: small;
+}
+button {
+    margin-top: 5%;
+    background-color: darkseagreen;
+    color: white;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    font-size: smaller;
+}
+button:hover {
+    background-color:dimgrey;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap'); /*importing custom font*/

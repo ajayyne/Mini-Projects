@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Product Card</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="row container"> <!--main boot strap row-->
+            <div class="col-lg-6">  <!--column containing one product card-->
+                <!--singular product card centered in middle-->
+                <div class="center">
+                    <div class="row container g-0 dior product"> <!--g-0 means no gutters! No space between columns in the row-->
+                        <div class="col-lg-6">
+                            <img src="images/prefume.jpg" alt="perfume" class="image responsive">
+                        </div>
+                        <div class="background col-lg-6"> <!--bootstrap lg setting = tablets NOT DESKTOP. This will be stacked on tablet and smaller.-->
+                            <h1 class="heading">Saint Rose Desert Nomad</h1>
+                            <p class="bio">This perfume has woody notes, floral highlights and a deep base of white musk. Elegant and mysterious, lasting hours on the skin.</p>
+                            <div class="price-container">
+                                <h2 class="price">£59.99</h2>
+                                <h6 class="original-price">69.99</h6>
+                            </div>
+                            <button class="cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6"> <!--column containing second product card-->
+                <div class="center">
+                    <div class="row container g-0 dior product"> <!--g-0 means no gutters! No space between columns in the row-->
+                        <div class="col-lg-6">
+                            <img src="images/dior.jpg" alt="perfume" class="image responsive">
+                        </div>
+                        <div class="background col-lg-6"> <!--bootstrap lg setting = tablets NOT DESKTOP. This will be stacked on tablet and smaller.-->
+                            <h1 class="heading">Dior Pillow Cushion</h1>
+                            <p class="bio">A silky smooth setting powder with a light shimmer. For all skin types and shades.</p>
+                            <div class="bottom">
+                                <div class="float"> <!--this content needs to be pushed to bottom of container-->
+                                    <h2 class="price">£32.00</h2>
+                                </div>
+                                <div class="cart">
+                                    <button class="cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
