@@ -1,39 +1,40 @@
+/*THIS IS MADE MOBILE FIRST AND DOES NOT YET HAVE STYLING FOR DESKTOP VIEW*/
+
 * {
     box-sizing: border-box;
 }
-
 body {
-    height: 100vh;  /*ensures the body is the entire height and width of the screen*/
-    width: 100vw;
-    background-color: darksalmon;
+    background-color: beige;
 }
-.center {
+.center {        
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /*centers horizontally*/
+    align-items: center; /*centers vertically*/
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .main {
-    width: 450px;
-    height: 300px;
+    width: 85%;
+    height: auto;
 }
-.row {
-    width: 450px;
-    height: 300px;
-}
-.column-one {  /*the column needs to take 50% width of the row*/
+
+/*setting a width and height on this is a problem, it doesnt stack*/
+.column-one {  /*the column needs to take 50% width of the row*/  
     background-color:chocolate;
-    width: 50%;
-    height: 100%;
+    /*width: 50%;
+    height: 100%;*/
     padding: 0; /*taking away bootstrap automatic padding*/
 }
 .image {      /*img needs to take 100% of column-one*/
     width: 100%;
     height: 100%;
 }
+
+/*setting a width and height on this is a problem, it doesnt stack*/
 .column-two {
     background-color: white;
-    width: 50%;
-    height: 100%;
+    /*width: 50%;
+    height: 100%;*/
     padding: 0; /*taking away bootstrap automatic padding*/
 }
 .bio {
@@ -63,18 +64,17 @@ h3 {
     font-size: small;
 }
 button {
-    margin-top: 5%;
+    margin-bottom: 5%;
     background-color: darkseagreen;
     color: white;
     border: none;
     padding: 5px 10px 5px 10px;
-    border-radius: 10px;
-    font-size: smaller;
+    border-radius: 15px;
+    font-size: medium;
 }
 button:hover {
     background-color:dimgrey;
 }
-
 
 
 
